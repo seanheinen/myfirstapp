@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#define MY_ARRAY @"tetr"
+
+
+// Colors
+#define UA_RGBA(r,g,b,a)    [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define UA_RGB(r,g,b)       UA_RGBA(r, g, b, 1.0f)
 
 @interface BaseViewController : UIViewController
 

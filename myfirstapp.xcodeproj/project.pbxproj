@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13AE9F1B1D783FB8009EC468 /* PaddedRoundedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AE9F1A1D783FB8009EC468 /* PaddedRoundedTextField.m */; };
+		13AE9F211D7847F5009EC468 /* UIButton+Styling.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AE9F201D7847F5009EC468 /* UIButton+Styling.m */; };
+		13AE9F251D784CAE009EC468 /* login-image-landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AE9F241D784CAE009EC468 /* login-image-landscape.jpg */; };
+		13AE9F271D784DBF009EC468 /* login-image-portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AE9F261D784DBF009EC468 /* login-image-portrait.jpg */; };
+		13AE9F291D784F31009EC468 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 13AE9F281D784F31009EC468 /* logo.png */; };
+		13AE9F2F1D785721009EC468 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AE9F2E1D785721009EC468 /* HomeViewController.m */; };
 		13AF23BA1D75B7A500CDB2BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23B91D75B7A500CDB2BC /* main.m */; };
 		13AF23BD1D75B7A500CDB2BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23BC1D75B7A500CDB2BC /* AppDelegate.m */; };
 		13AF23C51D75B7A600CDB2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AF23C41D75B7A600CDB2BC /* Assets.xcassets */; };
@@ -15,7 +21,6 @@
 		13E9FD6E1D7813330024DCD1 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD6D1D7813330024DCD1 /* UIView+AutoLayout.m */; };
 		13E9FD731D7813430024DCD1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD701D7813430024DCD1 /* BaseViewController.m */; };
 		13E9FD741D7813430024DCD1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD721D7813430024DCD1 /* LoginViewController.m */; };
-		13E9FD761D78134E0024DCD1 /* login-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E9FD751D78134E0024DCD1 /* login-image.png */; };
 		13E9FD791D7832740024DCD1 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD781D7832740024DCD1 /* UIView+Animation.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13AE9F191D783FB8009EC468 /* PaddedRoundedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaddedRoundedTextField.h; path = subclass/PaddedRoundedTextField.h; sourceTree = "<group>"; };
+		13AE9F1A1D783FB8009EC468 /* PaddedRoundedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaddedRoundedTextField.m; path = subclass/PaddedRoundedTextField.m; sourceTree = "<group>"; };
+		13AE9F1F1D7847F5009EC468 /* UIButton+Styling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Styling.h"; sourceTree = "<group>"; };
+		13AE9F201D7847F5009EC468 /* UIButton+Styling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Styling.m"; sourceTree = "<group>"; };
+		13AE9F241D784CAE009EC468 /* login-image-landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "login-image-landscape.jpg"; path = "art/login-image-landscape.jpg"; sourceTree = "<group>"; };
+		13AE9F261D784DBF009EC468 /* login-image-portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "login-image-portrait.jpg"; path = "art/login-image-portrait.jpg"; sourceTree = "<group>"; };
+		13AE9F281D784F31009EC468 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = art/logo.png; sourceTree = "<group>"; };
+		13AE9F2D1D785721009EC468 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = core/HomeViewController.h; sourceTree = "<group>"; };
+		13AE9F2E1D785721009EC468 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = core/HomeViewController.m; sourceTree = "<group>"; };
 		13AF23B51D75B7A500CDB2BC /* myfirstapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myfirstapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13AF23B91D75B7A500CDB2BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13AF23BB1D75B7A500CDB2BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +69,6 @@
 		13E9FD701D7813430024DCD1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = core/BaseViewController.m; sourceTree = "<group>"; };
 		13E9FD711D7813430024DCD1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = core/LoginViewController.h; sourceTree = "<group>"; };
 		13E9FD721D7813430024DCD1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = core/LoginViewController.m; sourceTree = "<group>"; };
-		13E9FD751D78134E0024DCD1 /* login-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-image.png"; path = "art/login-image.png"; sourceTree = "<group>"; };
 		13E9FD771D7832740024DCD1 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animation.h"; path = "categories/UIView+Animation.h"; sourceTree = "<group>"; };
 		13E9FD781D7832740024DCD1 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animation.m"; path = "categories/UIView+Animation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +108,9 @@
 		134A16A61D7728B200913710 /* art */ = {
 			isa = PBXGroup;
 			children = (
-				13E9FD751D78134E0024DCD1 /* login-image.png */,
+				13AE9F281D784F31009EC468 /* logo.png */,
+				13AE9F241D784CAE009EC468 /* login-image-landscape.jpg */,
+				13AE9F261D784DBF009EC468 /* login-image-portrait.jpg */,
 			);
 			name = art;
 			sourceTree = "<group>";
@@ -103,6 +118,8 @@
 		134A16A71D7728B800913710 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				13AE9F2D1D785721009EC468 /* HomeViewController.h */,
+				13AE9F2E1D785721009EC468 /* HomeViewController.m */,
 				13E9FD6F1D7813430024DCD1 /* BaseViewController.h */,
 				13E9FD701D7813430024DCD1 /* BaseViewController.m */,
 				13E9FD711D7813430024DCD1 /* LoginViewController.h */,
@@ -118,8 +135,19 @@
 				13E9FD6D1D7813330024DCD1 /* UIView+AutoLayout.m */,
 				13E9FD771D7832740024DCD1 /* UIView+Animation.h */,
 				13E9FD781D7832740024DCD1 /* UIView+Animation.m */,
+				13AE9F1F1D7847F5009EC468 /* UIButton+Styling.h */,
+				13AE9F201D7847F5009EC468 /* UIButton+Styling.m */,
 			);
 			name = categories;
+			sourceTree = "<group>";
+		};
+		13AE9F181D783EFF009EC468 /* subclass */ = {
+			isa = PBXGroup;
+			children = (
+				13AE9F191D783FB8009EC468 /* PaddedRoundedTextField.h */,
+				13AE9F1A1D783FB8009EC468 /* PaddedRoundedTextField.m */,
+			);
+			name = subclass;
 			sourceTree = "<group>";
 		};
 		13AF23AC1D75B7A500CDB2BC = {
@@ -145,6 +173,7 @@
 		13AF23B71D75B7A500CDB2BC /* myfirstapp */ = {
 			isa = PBXGroup;
 			children = (
+				13AE9F181D783EFF009EC468 /* subclass */,
 				134A16BD1D7761C900913710 /* categories */,
 				134A16A71D7728B800913710 /* core */,
 				134A16A61D7728B200913710 /* art */,
@@ -290,8 +319,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13AE9F291D784F31009EC468 /* logo.png in Resources */,
 				13AF23C51D75B7A600CDB2BC /* Assets.xcassets in Resources */,
-				13E9FD761D78134E0024DCD1 /* login-image.png in Resources */,
+				13AE9F271D784DBF009EC468 /* login-image-portrait.jpg in Resources */,
+				13AE9F251D784CAE009EC468 /* login-image-landscape.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +351,10 @@
 				13E9FD731D7813430024DCD1 /* BaseViewController.m in Sources */,
 				13AF23BD1D75B7A500CDB2BC /* AppDelegate.m in Sources */,
 				13E9FD791D7832740024DCD1 /* UIView+Animation.m in Sources */,
+				13AE9F211D7847F5009EC468 /* UIButton+Styling.m in Sources */,
+				13AE9F2F1D785721009EC468 /* HomeViewController.m in Sources */,
 				13AF23BA1D75B7A500CDB2BC /* main.m in Sources */,
+				13AE9F1B1D783FB8009EC468 /* PaddedRoundedTextField.m in Sources */,
 				13E9FD741D7813430024DCD1 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
