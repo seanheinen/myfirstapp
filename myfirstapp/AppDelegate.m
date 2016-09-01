@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,16 +19,17 @@
 {
     // Override point for customization after application launch.
     
-    
-    
     // init window with screen dimensions
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    // instantiate view controller
-    ViewController *myViewController = [[ViewController alloc] init];
+    // instantiate first view controller - login
+    LoginViewController *loginController = [[LoginViewController alloc] init];
     
-    // set root view controller to instatiated controller above
-    [self.window setRootViewController:myViewController];
+    // instantiate nav controller with login
+    self.navController = [[UINavigationController alloc] initWithRootViewController:loginController];
+
+    // set root view controller to nav above
+    [self.window setRootViewController: self.navController];
     
     // make visible
     [self.window makeKeyAndVisible];

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIView+AutoLayout.h
 //  myfirstapp
 //
 //  Created by Sean Heinen on 8/31/16.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIView (AutoLayout)
+
++(id)autolayoutView;
 
 @end
