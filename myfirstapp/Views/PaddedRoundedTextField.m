@@ -10,19 +10,23 @@
 
 @implementation PaddedRoundedTextField
 
-
-
-- (void)drawPlaceholderInRect:(CGRect)rect {
+- (id)init {
     
-    // format input
-    self.backgroundColor = [UIColor whiteColor];
-    self.textColor = [UIColor blackColor];
-    
-    [self.layer setCornerRadius:8.0f];
+    self = [super init];
+    if (self) {
+        self.backgroundColor = [UIColor whiteColor];
+        self.textColor = [UIColor blackColor];
+        
+        [self.layer setCornerRadius:8.0f];
+    }
+    return self;
     
 }
 
+
+
 - (CGRect)textRectForBounds:(CGRect)bounds {
+    
     return CGRectMake(bounds.origin.x + 10, bounds.origin.y + 8,
                       bounds.size.width - 20, bounds.size.height - 16);
 }

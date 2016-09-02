@@ -14,6 +14,7 @@
 #import "PaddedRoundedTextField.h"
 
 #import "HomeViewController.h"
+#import "TutorialViewController.h"
 
 @interface LoginViewController ()
 
@@ -47,8 +48,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // do navbar things    
-    [self hideNavbar:true];
+
     
     // do background
     bgImage.image = [UIImage imageNamed:@"login-image-portrait.jpg"];
@@ -59,22 +59,28 @@
     logo.image = [UIImage imageNamed:@"logo.png"];
     logo.alpha = 0.5;
     
-    usernameView.placeholder = @"Username";    
-    
-    passwordView.backgroundColor = [UIColor redColor];
+    usernameView.placeholder = @"Username";
     passwordView.placeholder = @"Password";
     passwordView.secureTextEntry = true;
     
     [buttonView confirmStyling];    
     [buttonView setTitle:@"Login" forState:UIControlStateNormal];
     
-    
     [buttonView addTarget:self
                  action:@selector(loginAction)
        forControlEvents:UIControlEventTouchUpInside];
     
+    //set default values
+    usernameView.text = @"seanheinen";
+    passwordView.text = @"password";
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    // do navbar things
+    [self hideNavbar:true];
+    
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -125,17 +131,17 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[loginView]-0-|" options:0 metrics:nil views:loginDictionary]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[loginView]-0-|" options:0 metrics:nil views:loginDictionary]];
      
-
-    // controller
-    NSDictionary *controlsDictionary = NSDictionaryOfVariableBindings(loginView, logo, usernameView, passwordView, buttonView);
+    // set widths
+    NSDictionary *controlsDictionary = NSDictionaryOfVariableBindings(logo, usernameView, passwordView, buttonView);
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[logo(200)]" options:0 metrics:nil views:controlsDictionary]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[usernameView(200)]" options:0 metrics:nil views:controlsDictionary]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[passwordView(usernameView)]" options:0 metrics:nil views:controlsDictionary]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[buttonView(200)]" options:0 metrics:nil views:controlsDictionary]];
     
-    // set same widths
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[logo(200)][usernameView(200)][passwordView(usernameView)][buttonView(usernameView)]" options:0 metrics:nil views:controlsDictionary]];
-    
-    // vertical spacing
+    // vertical spacing from bottom
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[logo(200)]-50-[usernameView(buttonView)]-[passwordView(buttonView)]-[buttonView]-100-|" options:0 metrics:nil views:controlsDictionary]];
     
-    // center all three controlls
+    // center all controlls horizontally
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:logo attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:loginView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:usernameView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:loginView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:passwordView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:loginView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
@@ -169,6 +175,20 @@
         [animation setDuration:0.1];
         [animation setRepeatCount:3];
         [animation setAutoreverses:YES];
+        
+        
+        [animation setFromValue:[NSValue valueWithCGPoint:
+                                 CGPointMake([usernameView center].x - 10.0f, [usernameView center].y)]];
+        [animation setToValue:[NSValue valueWithCGPoint:
+                               CGPointMake([usernameView center].x + 10.0f, [usernameView center].y)]];
+        [[usernameView layer] addAnimation:animation forKey:@"position"];
+        
+        [animation setFromValue:[NSValue valueWithCGPoint:
+                                 CGPointMake([passwordView center].x - 10.0f, [passwordView center].y)]];
+        [animation setToValue:[NSValue valueWithCGPoint:
+                               CGPointMake([passwordView center].x + 10.0f, [passwordView center].y)]];
+        [[passwordView layer] addAnimation:animation forKey:@"position"];
+        
         [animation setFromValue:[NSValue valueWithCGPoint:
                                  CGPointMake([buttonView center].x - 10.0f, [buttonView center].y)]];
         [animation setToValue:[NSValue valueWithCGPoint:
@@ -178,17 +198,14 @@
     }
     
     // go to home
-    HomeViewController *home = [[HomeViewController alloc] init];
-    [self.navigationController pushViewController:home animated:true];
+    //HomeViewController *home = [[HomeViewController alloc] init];
+    //[self.navigationController pushViewController:home animated:true];
     
+    TutorialViewController *tut = [[TutorialViewController alloc] init];
+    [self.navigationController pushViewController:tut animated:true];
     
-    
-    
-    return;
-    
-    [buttonView moveTo:CGPointMake(buttonView.frame.origin.x, loginView.frame.origin.y) duration:1.0 option:0];
-    [buttonView moveTo:CGPointMake(buttonView.frame.origin.x, buttonView.frame.origin.y) duration:1.0 option:0];
-    
+    //[buttonView moveTo:CGPointMake(buttonView.frame.origin.x, loginView.frame.origin.y) duration:1.0 option:0];
+    //[buttonView moveTo:CGPointMake(buttonView.frame.origin.x, buttonView.frame.origin.y) duration:1.0 option:0]
 }
 
 

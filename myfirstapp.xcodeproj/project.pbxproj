@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13AE9F1B1D783FB8009EC468 /* PaddedRoundedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AE9F1A1D783FB8009EC468 /* PaddedRoundedTextField.m */; };
-		13AE9F211D7847F5009EC468 /* UIButton+Styling.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AE9F201D7847F5009EC468 /* UIButton+Styling.m */; };
-		13AE9F251D784CAE009EC468 /* login-image-landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AE9F241D784CAE009EC468 /* login-image-landscape.jpg */; };
-		13AE9F271D784DBF009EC468 /* login-image-portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13AE9F261D784DBF009EC468 /* login-image-portrait.jpg */; };
-		13AE9F291D784F31009EC468 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 13AE9F281D784F31009EC468 /* logo.png */; };
-		13AE9F2F1D785721009EC468 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AE9F2E1D785721009EC468 /* HomeViewController.m */; };
+		13090C571D797C0C008EBF18 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13090C521D797C0C008EBF18 /* BaseViewController.m */; };
+		13090C581D797C0C008EBF18 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13090C541D797C0C008EBF18 /* HomeViewController.m */; };
+		13090C591D797C0C008EBF18 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13090C561D797C0C008EBF18 /* LoginViewController.m */; };
+		13090C5C1D797C36008EBF18 /* PaddedRoundedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 13090C5B1D797C36008EBF18 /* PaddedRoundedTextField.m */; };
+		13090C601D797C40008EBF18 /* login-image-landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13090C5D1D797C40008EBF18 /* login-image-landscape.jpg */; };
+		13090C611D797C40008EBF18 /* login-image-portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13090C5E1D797C40008EBF18 /* login-image-portrait.jpg */; };
+		13090C621D797C40008EBF18 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 13090C5F1D797C40008EBF18 /* logo.png */; };
+		13090C681D797C85008EBF18 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13090C671D797C85008EBF18 /* TutorialViewController.m */; };
+		13090C6E1D799773008EBF18 /* TutorialChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13090C6D1D799773008EBF18 /* TutorialChildViewController.m */; };
+		13AE9F321D785F0A009EC468 /* UIButton+Styling.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AE9F311D785F0A009EC468 /* UIButton+Styling.m */; };
 		13AF23BA1D75B7A500CDB2BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23B91D75B7A500CDB2BC /* main.m */; };
 		13AF23BD1D75B7A500CDB2BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23BC1D75B7A500CDB2BC /* AppDelegate.m */; };
 		13AF23C51D75B7A600CDB2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AF23C41D75B7A600CDB2BC /* Assets.xcassets */; };
 		13AF23D31D75B7A600CDB2BC /* myfirstappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23D21D75B7A600CDB2BC /* myfirstappTests.m */; };
 		13AF23DE1D75B7A600CDB2BC /* myfirstappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23DD1D75B7A600CDB2BC /* myfirstappUITests.m */; };
 		13E9FD6E1D7813330024DCD1 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD6D1D7813330024DCD1 /* UIView+AutoLayout.m */; };
-		13E9FD731D7813430024DCD1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD701D7813430024DCD1 /* BaseViewController.m */; };
-		13E9FD741D7813430024DCD1 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD721D7813430024DCD1 /* LoginViewController.m */; };
 		13E9FD791D7832740024DCD1 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD781D7832740024DCD1 /* UIView+Animation.m */; };
+		13EBE0FD1D7870E90071E005 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EBE0FC1D7870E90071E005 /* libAFNetworking.a */; };
+		13EBE0FF1D7872000071E005 /* libPods-myfirstapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EBE0FE1D7872000071E005 /* libPods-myfirstapp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,15 +46,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13AE9F191D783FB8009EC468 /* PaddedRoundedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaddedRoundedTextField.h; path = subclass/PaddedRoundedTextField.h; sourceTree = "<group>"; };
-		13AE9F1A1D783FB8009EC468 /* PaddedRoundedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaddedRoundedTextField.m; path = subclass/PaddedRoundedTextField.m; sourceTree = "<group>"; };
-		13AE9F1F1D7847F5009EC468 /* UIButton+Styling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Styling.h"; sourceTree = "<group>"; };
-		13AE9F201D7847F5009EC468 /* UIButton+Styling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Styling.m"; sourceTree = "<group>"; };
-		13AE9F241D784CAE009EC468 /* login-image-landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "login-image-landscape.jpg"; path = "art/login-image-landscape.jpg"; sourceTree = "<group>"; };
-		13AE9F261D784DBF009EC468 /* login-image-portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "login-image-portrait.jpg"; path = "art/login-image-portrait.jpg"; sourceTree = "<group>"; };
-		13AE9F281D784F31009EC468 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = art/logo.png; sourceTree = "<group>"; };
-		13AE9F2D1D785721009EC468 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = core/HomeViewController.h; sourceTree = "<group>"; };
-		13AE9F2E1D785721009EC468 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = core/HomeViewController.m; sourceTree = "<group>"; };
+		13090C511D797C0C008EBF18 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Controllers/BaseViewController.h; sourceTree = "<group>"; };
+		13090C521D797C0C008EBF18 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Controllers/BaseViewController.m; sourceTree = "<group>"; };
+		13090C531D797C0C008EBF18 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Controllers/HomeViewController.h; sourceTree = "<group>"; };
+		13090C541D797C0C008EBF18 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Controllers/HomeViewController.m; sourceTree = "<group>"; };
+		13090C551D797C0C008EBF18 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/LoginViewController.h; sourceTree = "<group>"; };
+		13090C561D797C0C008EBF18 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controllers/LoginViewController.m; sourceTree = "<group>"; };
+		13090C5A1D797C36008EBF18 /* PaddedRoundedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaddedRoundedTextField.h; path = Views/PaddedRoundedTextField.h; sourceTree = "<group>"; };
+		13090C5B1D797C36008EBF18 /* PaddedRoundedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaddedRoundedTextField.m; path = Views/PaddedRoundedTextField.m; sourceTree = "<group>"; };
+		13090C5D1D797C40008EBF18 /* login-image-landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "login-image-landscape.jpg"; path = "Image/login-image-landscape.jpg"; sourceTree = "<group>"; };
+		13090C5E1D797C40008EBF18 /* login-image-portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "login-image-portrait.jpg"; path = "Image/login-image-portrait.jpg"; sourceTree = "<group>"; };
+		13090C5F1D797C40008EBF18 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Image/logo.png; sourceTree = "<group>"; };
+		13090C661D797C85008EBF18 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialViewController.h; path = Controllers/TutorialViewController.h; sourceTree = "<group>"; };
+		13090C671D797C85008EBF18 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialViewController.m; path = Controllers/TutorialViewController.m; sourceTree = "<group>"; };
+		13090C6C1D799773008EBF18 /* TutorialChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialChildViewController.h; path = Controllers/TutorialChildViewController.h; sourceTree = "<group>"; };
+		13090C6D1D799773008EBF18 /* TutorialChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialChildViewController.m; path = Controllers/TutorialChildViewController.m; sourceTree = "<group>"; };
+		13AE9F301D785F0A009EC468 /* UIButton+Styling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Styling.h"; path = "categories/UIButton+Styling.h"; sourceTree = "<group>"; };
+		13AE9F311D785F0A009EC468 /* UIButton+Styling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Styling.m"; path = "categories/UIButton+Styling.m"; sourceTree = "<group>"; };
 		13AF23B51D75B7A500CDB2BC /* myfirstapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myfirstapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13AF23B91D75B7A500CDB2BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13AF23BB1D75B7A500CDB2BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,12 +77,13 @@
 		13AF23DF1D75B7A600CDB2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13E9FD6C1D7813330024DCD1 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+AutoLayout.h"; path = "categories/UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		13E9FD6D1D7813330024DCD1 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+AutoLayout.m"; path = "categories/UIView+AutoLayout.m"; sourceTree = "<group>"; };
-		13E9FD6F1D7813430024DCD1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = core/BaseViewController.h; sourceTree = "<group>"; };
-		13E9FD701D7813430024DCD1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = core/BaseViewController.m; sourceTree = "<group>"; };
-		13E9FD711D7813430024DCD1 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = core/LoginViewController.h; sourceTree = "<group>"; };
-		13E9FD721D7813430024DCD1 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = core/LoginViewController.m; sourceTree = "<group>"; };
 		13E9FD771D7832740024DCD1 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animation.h"; path = "categories/UIView+Animation.h"; sourceTree = "<group>"; };
 		13E9FD781D7832740024DCD1 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Animation.m"; path = "categories/UIView+Animation.m"; sourceTree = "<group>"; };
+		13EBE0FC1D7870E90071E005 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
+		13EBE0FE1D7872000071E005 /* libPods-myfirstapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-myfirstapp.a"; path = "Pods/../build/Debug-iphoneos/libPods-myfirstapp.a"; sourceTree = "<group>"; };
+		3793565071ACD11D86A882EE /* Pods-myfirstapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myfirstapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myfirstapp/Pods-myfirstapp.debug.xcconfig"; sourceTree = "<group>"; };
+		3B145D63EF63E17E5E2C6E9F /* libPods-myfirstapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myfirstapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79620B7D4D4743375E98E0C3 /* Pods-myfirstapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myfirstapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-myfirstapp/Pods-myfirstapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13EBE0FF1D7872000071E005 /* libPods-myfirstapp.a in Frameworks */,
+				13EBE0FD1D7870E90071E005 /* libAFNetworking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,56 +113,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		134A16A51D7728A400913710 /* layout */ = {
+		134A16A51D7728A400913710 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = layout;
+			name = Layout;
 			sourceTree = "<group>";
 		};
-		134A16A61D7728B200913710 /* art */ = {
+		134A16A61D7728B200913710 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				13AE9F281D784F31009EC468 /* logo.png */,
-				13AE9F241D784CAE009EC468 /* login-image-landscape.jpg */,
-				13AE9F261D784DBF009EC468 /* login-image-portrait.jpg */,
+				13090C5D1D797C40008EBF18 /* login-image-landscape.jpg */,
+				13090C5E1D797C40008EBF18 /* login-image-portrait.jpg */,
+				13090C5F1D797C40008EBF18 /* logo.png */,
 			);
-			name = art;
+			name = Images;
 			sourceTree = "<group>";
 		};
-		134A16A71D7728B800913710 /* core */ = {
+		134A16A71D7728B800913710 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				13AE9F2D1D785721009EC468 /* HomeViewController.h */,
-				13AE9F2E1D785721009EC468 /* HomeViewController.m */,
-				13E9FD6F1D7813430024DCD1 /* BaseViewController.h */,
-				13E9FD701D7813430024DCD1 /* BaseViewController.m */,
-				13E9FD711D7813430024DCD1 /* LoginViewController.h */,
-				13E9FD721D7813430024DCD1 /* LoginViewController.m */,
+				13090C511D797C0C008EBF18 /* BaseViewController.h */,
+				13090C521D797C0C008EBF18 /* BaseViewController.m */,
+				13090C531D797C0C008EBF18 /* HomeViewController.h */,
+				13090C541D797C0C008EBF18 /* HomeViewController.m */,
+				13090C551D797C0C008EBF18 /* LoginViewController.h */,
+				13090C561D797C0C008EBF18 /* LoginViewController.m */,
+				13090C661D797C85008EBF18 /* TutorialViewController.h */,
+				13090C671D797C85008EBF18 /* TutorialViewController.m */,
+				13090C6C1D799773008EBF18 /* TutorialChildViewController.h */,
+				13090C6D1D799773008EBF18 /* TutorialChildViewController.m */,
 			);
-			name = core;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
-		134A16BD1D7761C900913710 /* categories */ = {
+		134A16BD1D7761C900913710 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				13AE9F301D785F0A009EC468 /* UIButton+Styling.h */,
+				13AE9F311D785F0A009EC468 /* UIButton+Styling.m */,
 				13E9FD6C1D7813330024DCD1 /* UIView+AutoLayout.h */,
 				13E9FD6D1D7813330024DCD1 /* UIView+AutoLayout.m */,
 				13E9FD771D7832740024DCD1 /* UIView+Animation.h */,
 				13E9FD781D7832740024DCD1 /* UIView+Animation.m */,
-				13AE9F1F1D7847F5009EC468 /* UIButton+Styling.h */,
-				13AE9F201D7847F5009EC468 /* UIButton+Styling.m */,
 			);
-			name = categories;
+			name = Categories;
 			sourceTree = "<group>";
 		};
-		13AE9F181D783EFF009EC468 /* subclass */ = {
+		13A367561D79761E00EC3F7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				13AE9F191D783FB8009EC468 /* PaddedRoundedTextField.h */,
-				13AE9F1A1D783FB8009EC468 /* PaddedRoundedTextField.m */,
+				13090C5A1D797C36008EBF18 /* PaddedRoundedTextField.h */,
+				13090C5B1D797C36008EBF18 /* PaddedRoundedTextField.m */,
 			);
-			name = subclass;
+			name = Views;
+			sourceTree = "<group>";
+		};
+		13A367571D79765500EC3F7A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		13AF23AC1D75B7A500CDB2BC = {
@@ -157,6 +183,8 @@
 				13AF23D11D75B7A600CDB2BC /* myfirstappTests */,
 				13AF23DC1D75B7A600CDB2BC /* myfirstappUITests */,
 				13AF23B61D75B7A500CDB2BC /* Products */,
+				28E35879A2AB959F747FFD15 /* Pods */,
+				7EFA81F84FA7ECD1D7F40604 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,11 +201,12 @@
 		13AF23B71D75B7A500CDB2BC /* myfirstapp */ = {
 			isa = PBXGroup;
 			children = (
-				13AE9F181D783EFF009EC468 /* subclass */,
-				134A16BD1D7761C900913710 /* categories */,
-				134A16A71D7728B800913710 /* core */,
-				134A16A61D7728B200913710 /* art */,
-				134A16A51D7728A400913710 /* layout */,
+				13A367571D79765500EC3F7A /* Helpers */,
+				13A367561D79761E00EC3F7A /* Views */,
+				134A16BD1D7761C900913710 /* Categories */,
+				134A16A71D7728B800913710 /* Controllers */,
+				134A16A61D7728B200913710 /* Images */,
+				134A16A51D7728A400913710 /* Layout */,
 				13AF23BB1D75B7A500CDB2BC /* AppDelegate.h */,
 				13AF23BC1D75B7A500CDB2BC /* AppDelegate.m */,
 				13AF23C41D75B7A600CDB2BC /* Assets.xcassets */,
@@ -213,6 +242,25 @@
 			path = myfirstappUITests;
 			sourceTree = "<group>";
 		};
+		28E35879A2AB959F747FFD15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3793565071ACD11D86A882EE /* Pods-myfirstapp.debug.xcconfig */,
+				79620B7D4D4743375E98E0C3 /* Pods-myfirstapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7EFA81F84FA7ECD1D7F40604 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13EBE0FE1D7872000071E005 /* libPods-myfirstapp.a */,
+				13EBE0FC1D7870E90071E005 /* libAFNetworking.a */,
+				3B145D63EF63E17E5E2C6E9F /* libPods-myfirstapp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13AF23E21D75B7A600CDB2BC /* Build configuration list for PBXNativeTarget "myfirstapp" */;
 			buildPhases = (
+				D3BC472D869DD9AE9E7BAB5F /* [CP] Check Pods Manifest.lock */,
 				13AF23B11D75B7A500CDB2BC /* Sources */,
 				13AF23B21D75B7A500CDB2BC /* Frameworks */,
 				13AF23B31D75B7A500CDB2BC /* Resources */,
+				CBC02AA9BB9923242F5614C2 /* [CP] Embed Pods Frameworks */,
+				63B5A4F84F5BE1990B816E6C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,10 +370,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13AE9F291D784F31009EC468 /* logo.png in Resources */,
+				13090C621D797C40008EBF18 /* logo.png in Resources */,
+				13090C611D797C40008EBF18 /* login-image-portrait.jpg in Resources */,
 				13AF23C51D75B7A600CDB2BC /* Assets.xcassets in Resources */,
-				13AE9F271D784DBF009EC468 /* login-image-portrait.jpg in Resources */,
-				13AE9F251D784CAE009EC468 /* login-image-landscape.jpg in Resources */,
+				13090C601D797C40008EBF18 /* login-image-landscape.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,20 +393,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63B5A4F84F5BE1990B816E6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myfirstapp/Pods-myfirstapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBC02AA9BB9923242F5614C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myfirstapp/Pods-myfirstapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3BC472D869DD9AE9E7BAB5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13AF23B11D75B7A500CDB2BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				13E9FD6E1D7813330024DCD1 /* UIView+AutoLayout.m in Sources */,
-				13E9FD731D7813430024DCD1 /* BaseViewController.m in Sources */,
 				13AF23BD1D75B7A500CDB2BC /* AppDelegate.m in Sources */,
+				13AE9F321D785F0A009EC468 /* UIButton+Styling.m in Sources */,
 				13E9FD791D7832740024DCD1 /* UIView+Animation.m in Sources */,
-				13AE9F211D7847F5009EC468 /* UIButton+Styling.m in Sources */,
-				13AE9F2F1D785721009EC468 /* HomeViewController.m in Sources */,
+				13090C6E1D799773008EBF18 /* TutorialChildViewController.m in Sources */,
+				13090C681D797C85008EBF18 /* TutorialViewController.m in Sources */,
 				13AF23BA1D75B7A500CDB2BC /* main.m in Sources */,
-				13AE9F1B1D783FB8009EC468 /* PaddedRoundedTextField.m in Sources */,
-				13E9FD741D7813430024DCD1 /* LoginViewController.m in Sources */,
+				13090C591D797C0C008EBF18 /* LoginViewController.m in Sources */,
+				13090C571D797C0C008EBF18 /* BaseViewController.m in Sources */,
+				13090C581D797C0C008EBF18 /* HomeViewController.m in Sources */,
+				13090C5C1D797C36008EBF18 /* PaddedRoundedTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,10 +584,16 @@
 		};
 		13AF23E31D75B7A600CDB2BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3793565071ACD11D86A882EE /* Pods-myfirstapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = myfirstapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.heinen.myfirstapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -494,10 +601,16 @@
 		};
 		13AF23E41D75B7A600CDB2BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79620B7D4D4743375E98E0C3 /* Pods-myfirstapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = myfirstapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.heinen.myfirstapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
