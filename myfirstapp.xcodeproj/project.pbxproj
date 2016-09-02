@@ -22,6 +22,7 @@
 		13AF23C51D75B7A600CDB2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AF23C41D75B7A600CDB2BC /* Assets.xcassets */; };
 		13AF23D31D75B7A600CDB2BC /* myfirstappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23D21D75B7A600CDB2BC /* myfirstappTests.m */; };
 		13AF23DE1D75B7A600CDB2BC /* myfirstappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23DD1D75B7A600CDB2BC /* myfirstappUITests.m */; };
+		13D09D961D7A0D87009C6464 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D09D951D7A0D87009C6464 /* Default.png */; };
 		13E9FD6E1D7813330024DCD1 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD6D1D7813330024DCD1 /* UIView+AutoLayout.m */; };
 		13E9FD791D7832740024DCD1 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E9FD781D7832740024DCD1 /* UIView+Animation.m */; };
 		13EBE0FD1D7870E90071E005 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EBE0FC1D7870E90071E005 /* libAFNetworking.a */; };
@@ -75,6 +76,7 @@
 		13AF23D91D75B7A600CDB2BC /* myfirstappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myfirstappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13AF23DD1D75B7A600CDB2BC /* myfirstappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myfirstappUITests.m; sourceTree = "<group>"; };
 		13AF23DF1D75B7A600CDB2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13D09D951D7A0D87009C6464 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Image/Default.png; sourceTree = "<group>"; };
 		13E9FD6C1D7813330024DCD1 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+AutoLayout.h"; path = "categories/UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		13E9FD6D1D7813330024DCD1 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+AutoLayout.m"; path = "categories/UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		13E9FD771D7832740024DCD1 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Animation.h"; path = "categories/UIView+Animation.h"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		134A16A61D7728B200913710 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				13D09D951D7A0D87009C6464 /* Default.png */,
 				13090C5D1D797C40008EBF18 /* login-image-landscape.jpg */,
 				13090C5E1D797C40008EBF18 /* login-image-portrait.jpg */,
 				13090C5F1D797C40008EBF18 /* logo.png */,
@@ -374,6 +377,7 @@
 				13090C611D797C40008EBF18 /* login-image-portrait.jpg in Resources */,
 				13AF23C51D75B7A600CDB2BC /* Assets.xcassets in Resources */,
 				13090C601D797C40008EBF18 /* login-image-landscape.jpg in Resources */,
+				13D09D961D7A0D87009C6464 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,6 @@
 @implementation BaseViewController
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
     
     // do nav bar things
@@ -25,14 +24,7 @@
 
 }
 
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-// nav stuff
+// navbar
 - (void)setNavTitle:(NSString*) string {
     self.navigationItem.title = string;
 }
@@ -41,7 +33,10 @@
     [[self navigationController] setNavigationBarHidden:hidden];
 }
 
-
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 
 @end

@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TutorialViewController : UIViewController <UIPageViewControllerDataSource>
+#import "BaseViewController.h"
+
+@interface TutorialViewController : BaseViewController <UIPageViewControllerDataSource>
 
 @property (strong, nonatomic) UIPageViewController *pageController;
 

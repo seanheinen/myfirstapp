@@ -8,43 +8,46 @@
 
 #import "TutorialViewController.h"
 #import "TutorialChildViewController.h"
-
 #import "UIView+AutoLayout.h"
 
 @interface TutorialViewController ()
 
 @end
 
-@implementation TutorialViewController{
-    UILabel *tester;
+@implementation TutorialViewController {
+    NSArray *pageContent;
 }
 
 - (void)loadView {
     [super loadView];
     
     [self initViews];
-    [self addContraints];
-    
+    [self formatViews];
+    [self viewContraints];
+    [self createContentPages];
 }
 
-- (void)initViews{
-    tester = [UILabel autolayoutView];
-    
-    [self.view addSubview:tester];
+- (void)initViews {
 }
-- (void)addContraints{
-    // tester view
-    NSDictionary *labelDictionary = NSDictionaryOfVariableBindings(tester);
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[tester]-0-|" options:0 metrics:nil views:labelDictionary]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[tester]-0-|" options:0 metrics:nil views:labelDictionary]];
+- (void)formatViews {
+    self.view.backgroundColor = UA_RGBA(95,136,180,0.5);
+}
+- (void)viewContraints {
+}
+
+- (void) createContentPages{
+    
+    pageContent = [NSArray arrayWithObjects:
+                   @"This is step one",
+                   @"This is step two",
+                   @"This is step three",
+                   @"This is step four",
+                   @"This is step five",
+                   nil];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    tester.backgroundColor = [UIColor redColor];
-    
     
     // instantiate pagecontroller with horizontal animation swipe
     self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
@@ -53,8 +56,7 @@
     [[self.pageController view] setFrame:[[self view] bounds]];
     
     // instatiate child controller and set initial
-    TutorialChildViewController *initialViewController = [self viewControllerAtIndex:2];
-    
+    TutorialChildViewController *initialViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
     
     [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
@@ -65,22 +67,13 @@
     
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
+// UIPageViewControllerDataSource required protocol
 - (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
     
-    
     NSUInteger index = [(TutorialChildViewController *)viewController index];
-    
     if (index == 0) {
         return nil;
     }
-    
     index--;
     
     return [self viewControllerAtIndex:index];
@@ -90,7 +83,6 @@
     NSUInteger index = [(TutorialChildViewController *)viewController index];
     
     index++;
-    
     if (index == 5) {
         return nil;
     }
@@ -102,20 +94,24 @@
     
     TutorialChildViewController *childViewController = [[TutorialChildViewController alloc] initWithNibName:@"TutorialChildViewController" bundle:nil];
     childViewController.index = index;
+    childViewController.pageContent = pageContent;
     
     return childViewController;
-    
 }
 
-
+// UIPageViewControllerDataSource optional protocol
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-    // The number of items reflected in the page indicator.
     return 5;
 }
-
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-    // The selected item reflected in the page indicator.
     return 0;
 }
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 
 @end
