@@ -157,10 +157,13 @@
         return;
     }
     
+    // Home
+    HomeViewController *homeView = [[HomeViewController alloc] init];
+    [self.navigationController pushViewController:homeView animated:true];
     
     // Tutorial
-    TutorialViewController *tut = [[TutorialViewController alloc] init];
-    [self.navigationController pushViewController:tut animated:true];
+    //TutorialViewController *tut = [[TutorialViewController alloc] init];
+    //[self.navigationController pushViewController:tut animated:true];
     
 }
 

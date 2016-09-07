@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "UIView+AutoLayout.h"
+#import "DBManager.h"
 
 #import <AFNetworking.h>
 
@@ -20,6 +21,8 @@
     NSDictionary *listData;
     NSArray *tableData;
     UITableView *myList;
+    
+    DBManager *dbManager;
 }
 
 - (void)loadView {
@@ -57,7 +60,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self getData];
+    [self getData];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -68,6 +71,35 @@
 }
 
 - (void) getData{
+    
+    dbManager = [[DBManager alloc] initWithDatabaseFilename:@"sampledb.sql"];
+    
+    
+    NSString *getQuery = [NSString stringWithFormat:@"select * from peopleInfo"];
+    NSArray *persons = [dbManager loadDataFromDB:getQuery];
+    
+    tableData = persons;
+    [myList reloadData];
+    
+    /*
+    // Prepare the query string.
+    NSString *query = [NSString stringWithFormat:@"insert into peopleInfo values (null, '%@', '%@', %d);", @"Sean", @"Heinen", 28];
+    // Execute the query.
+    [dbManager executeQuery:query];
+    
+    // If the query was successfully executed then pop the view controller.
+    if (dbManager.affectedRows != 0) {
+        NSLog(@"Query was executed successfully. Affected rows = %d", dbManager.affectedRows);
+        
+        // Pop the view controller.
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else{
+        NSLog(@"Could not execute the query.");
+    }
+    */
+     
+    return;
     
     NSURL *url = [NSURL URLWithString:@"http://jsonplaceholder.typicode.com/posts"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -107,10 +139,26 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
-    
+    /*
     NSDictionary * dict = [tableData objectAtIndex:indexPath.row];
     cell.textLabel.text = dict[@"title"] ;
     return cell;
+    */
+    
+    // get indices of columns
+    NSInteger indexOfFirstname = [dbManager.arrColumnNames indexOfObject:@"firstname"];
+    NSInteger indexOfLastname = [dbManager.arrColumnNames indexOfObject:@"lastname"];
+    NSInteger indexOfAge = [dbManager.arrColumnNames indexOfObject:@"age"];
+    
+    // Set the loaded data to the appropriate cell labels.
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", [[tableData objectAtIndex:indexPath.row] objectAtIndex:indexOfFirstname], [[tableData objectAtIndex:indexPath.row] objectAtIndex:indexOfLastname]];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Age: %@", [[tableData objectAtIndex:indexPath.row] objectAtIndex:indexOfAge]];
+    
+    
+    return cell;
+    
 }
 
 // UITableViewDelegate optional protocol

@@ -16,6 +16,9 @@
 		13090C621D797C40008EBF18 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 13090C5F1D797C40008EBF18 /* logo.png */; };
 		13090C681D797C85008EBF18 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13090C671D797C85008EBF18 /* TutorialViewController.m */; };
 		13090C6E1D799773008EBF18 /* TutorialChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13090C6D1D799773008EBF18 /* TutorialChildViewController.m */; };
+		138E166B1D8007B200CA1C25 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 138E166A1D8007B200CA1C25 /* libsqlite3.tbd */; };
+		138E16711D80082C00CA1C25 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 138E16701D80082C00CA1C25 /* DBManager.m */; };
+		138E16761D8047D200CA1C25 /* sampledb.sql in Resources */ = {isa = PBXBuildFile; fileRef = 138E16751D8046D100CA1C25 /* sampledb.sql */; };
 		13AE9F321D785F0A009EC468 /* UIButton+Styling.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AE9F311D785F0A009EC468 /* UIButton+Styling.m */; };
 		13AF23BA1D75B7A500CDB2BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23B91D75B7A500CDB2BC /* main.m */; };
 		13AF23BD1D75B7A500CDB2BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13AF23BC1D75B7A500CDB2BC /* AppDelegate.m */; };
@@ -62,6 +65,10 @@
 		13090C671D797C85008EBF18 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialViewController.m; path = Controllers/TutorialViewController.m; sourceTree = "<group>"; };
 		13090C6C1D799773008EBF18 /* TutorialChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialChildViewController.h; path = Controllers/TutorialChildViewController.h; sourceTree = "<group>"; };
 		13090C6D1D799773008EBF18 /* TutorialChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TutorialChildViewController.m; path = Controllers/TutorialChildViewController.m; sourceTree = "<group>"; };
+		138E166A1D8007B200CA1C25 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		138E166F1D80082C00CA1C25 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = Helpers/DBManager.h; sourceTree = "<group>"; };
+		138E16701D80082C00CA1C25 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = Helpers/DBManager.m; sourceTree = "<group>"; };
+		138E16751D8046D100CA1C25 /* sampledb.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = sampledb.sql; sourceTree = "<group>"; };
 		13AE9F301D785F0A009EC468 /* UIButton+Styling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+Styling.h"; path = "categories/UIButton+Styling.h"; sourceTree = "<group>"; };
 		13AE9F311D785F0A009EC468 /* UIButton+Styling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Styling.m"; path = "categories/UIButton+Styling.m"; sourceTree = "<group>"; };
 		13AF23B51D75B7A500CDB2BC /* myfirstapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myfirstapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138E166B1D8007B200CA1C25 /* libsqlite3.tbd in Frameworks */,
 				13EBE0FF1D7872000071E005 /* libPods-myfirstapp.a in Frameworks */,
 				13EBE0FD1D7870E90071E005 /* libAFNetworking.a in Frameworks */,
 			);
@@ -118,6 +126,7 @@
 		134A16A51D7728A400913710 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				138E16751D8046D100CA1C25 /* sampledb.sql */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -175,6 +184,8 @@
 		13A367571D79765500EC3F7A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				138E166F1D80082C00CA1C25 /* DBManager.h */,
+				138E16701D80082C00CA1C25 /* DBManager.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -257,6 +268,7 @@
 		7EFA81F84FA7ECD1D7F40604 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				138E166A1D8007B200CA1C25 /* libsqlite3.tbd */,
 				13EBE0FE1D7872000071E005 /* libPods-myfirstapp.a */,
 				13EBE0FC1D7870E90071E005 /* libAFNetworking.a */,
 				3B145D63EF63E17E5E2C6E9F /* libPods-myfirstapp.a */,
@@ -373,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138E16761D8047D200CA1C25 /* sampledb.sql in Resources */,
 				13090C621D797C40008EBF18 /* logo.png in Resources */,
 				13090C611D797C40008EBF18 /* login-image-portrait.jpg in Resources */,
 				13AF23C51D75B7A600CDB2BC /* Assets.xcassets in Resources */,
@@ -453,6 +466,7 @@
 				13E9FD6E1D7813330024DCD1 /* UIView+AutoLayout.m in Sources */,
 				13AF23BD1D75B7A500CDB2BC /* AppDelegate.m in Sources */,
 				13AE9F321D785F0A009EC468 /* UIButton+Styling.m in Sources */,
+				138E16711D80082C00CA1C25 /* DBManager.m in Sources */,
 				13E9FD791D7832740024DCD1 /* UIView+Animation.m in Sources */,
 				13090C6E1D799773008EBF18 /* TutorialChildViewController.m in Sources */,
 				13090C681D797C85008EBF18 /* TutorialViewController.m in Sources */,
